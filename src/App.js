@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import MyComponent from './MyComponent';
 
 function App() {
   return (
@@ -7,7 +8,10 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Runtime type checking for React props and similar objects.
+        </p>
+        <p>
+          PropTypes was originally exposed as part of the React core module, and is commonly used with React components.<br></br> Here is an example of using PropTypes with a React component, which also documents the different validators provided:
         </p>
         <a
           className="App-link"
@@ -17,6 +21,7 @@ function App() {
         >
           Learn React
         </a>
+        <MyComponent name={"PropTypes validated"} />
       </header>
     </div>
   );
